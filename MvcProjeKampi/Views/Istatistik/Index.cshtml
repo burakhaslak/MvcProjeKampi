@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="row">
+    <!-- Kart 1 -->
+    <div class="col-md-4">
+        <div class="card text-white bg-gradient-indigo mb-3" style="height:200px;">
+            <div class="card-header">İstatistik 1</div>
+            <div class="card-body">
+                <h5 class="card-title">Toplam Kategori Sayısı</h5>
+                <br /><br />
+                <p class="card-text">@ViewBag.TotalCategories</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Kart 1 -->
+    <div class="col-md-4">
+        <div class="card text-white bg-gradient-olive mb-3" style="height:200px;">
+            <div class="card-header">İstatistik 2</div>
+            <div class="card-body">
+                <h5 class="card-title">Yazılım Kategorisine Ait Toplam Başlık Sayısı</h5>
+                <br /><br />
+                <p class="card-text">@ViewBag.softwareHeadingCount</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kart 1 -->
+    <div class="col-md-4">
+        <div class="card text-white bg-gradient-teal mb-3" style="height:200px;">
+            <div class="card-header">İstatistik 3</div>
+            <div class="card-body">
+                <h5 class="card-title">İsminde "A" Harfi Olan Yazar Sayısı</h5>
+                <br /><br />
+                <p class="card-text">@ViewBag.authorWithA</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<br />
+<div class="row">
+    <!-- Kart 1 -->
+    <div class="col-md-4">
+        <div class="card text-white bg-gradient-danger mb-3" style="height:200px;">
+            <div class="card-header">İstatistik 4</div>
+            <div class="card-body">
+                <h5 class="card-title">En Fazla Başlığa Sahip Olan Kategori</h5>
+               <br /><br />
+                <p class="card-text">@ViewBag.maxHeadingCategory</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Kart 1 -->
+    <div class="col-md-4">
+        <div class="card text-white bg-gradient-orange mb-3" style="height:200px;">
+            <div class="card-header">İstatistik 5</div>
+            <div class="card-body">
+                <h5 class="card-title">Durumu True ve False Olan Kategorilerin Farkı</h5> 
+                <br /><br />
+                <p class="card-text">@ViewBag.difference</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
